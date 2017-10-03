@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cpv2api.com/following/connorkendrick
+  response:
+    body: {string: '{"success":"true","data":[{"nicename":"Chris Coyier","username":"chriscoyier","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/profile/profile-80.jpg?48","url":"http://codepen.io/chriscoyier"},{"nicename":"Mombasa","username":"Mombasa","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/33170/profile/profile-80.jpg?11","url":"http://codepen.io/Mombasa"},{"nicename":"Rachel
+        Smith","username":"rachsmith","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/profile/profile-80.jpg?100000","url":"http://codepen.io/rachsmith"}]}'}
+    headers:
+      Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['547']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 03 Oct 2017 20:04:47 GMT']
+      Etag: [W/"223-KL3Fi/zD9PxkDt5IZgQgcRrBnqI"]
+      Server: [Cowboy]
+      Via: [1.1 vegur]
+      X-Powered-By: [Express]
+    status: {code: 200, message: OK}
+version: 1

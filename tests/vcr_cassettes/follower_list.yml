@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cpv2api.com/followers/chriscoyier?page=2
+  response:
+    body: {string: '{"success":"true","data":[{"nicename":"Michael E Conroy","username":"m-e-conroy","avatar":"https://gravatar.com/avatar/0c517fb82d1970654ba6e41cee2c6ac5?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/m-e-conroy"},{"nicename":"A.J.
+        Liptak","username":"AJamesL","avatar":"https://gravatar.com/avatar/50f24afd0733a4057a8ec8231f75c053?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/AJamesL"},{"nicename":"Vikas
+        Parashar","username":"vikas-parashar","avatar":"https://gravatar.com/avatar/afe5995cd93ca8f5180b816135b5578d?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/vikas-parashar"},{"nicename":"Michelle
+        G.","username":"hartly97","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/113677/profile/profile-80.jpg?1","url":"http://codepen.io/hartly97"},{"nicename":"Arthur
+        Camara","username":"arthurcamara1","avatar":"https://gravatar.com/avatar/c9b85b9bc36297369b39a588688b64db?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/arthurcamara1"},{"nicename":"sparrow-spit","username":"SparrowSpit","avatar":"https://gravatar.com/avatar/2aeff37f89bee85a31c7b8fe75e694c1?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/SparrowSpit"},{"nicename":"Anthony
+        Alvarez","username":"anthonyalvarez","avatar":"https://gravatar.com/avatar/5a4b240545dfa1b4f71f8cc3ffc945cc?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/anthonyalvarez"},{"nicename":"Mahmoud
+        El Hakim","username":"abomostafacobra","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/430985/profile/profile-80.jpg?3","url":"http://codepen.io/abomostafacobra"},{"nicename":"Viktoriia","username":"vita78ru","avatar":"https://gravatar.com/avatar/8be3dfc8ee56007d725a633fe16db67e?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/vita78ru"},{"nicename":"Sarah
+        Anderson","username":"sarahA","avatar":"https://gravatar.com/avatar/48dee67fcc48fcad02fb9f93adc94186?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/sarahA"},{"nicename":"Kareem
+        Hassan","username":"kemox5","avatar":"https://gravatar.com/avatar/6a592c5586e1c49f9a4f5aad2e7a2569?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/kemox5"},{"nicename":"MBheiry","username":"MBheiry","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/768539/profile/profile-80.jpg?1","url":"http://codepen.io/MBheiry"},{"nicename":"ahmad
+        hejazi","username":"ahmad-hejazi","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/832111/profile/profile-80.jpg?1","url":"http://codepen.io/ahmad-hejazi"},{"nicename":"Sara","username":"SaraEsam","avatar":"https://gravatar.com/avatar/b84883c0f4dceb4f67c6247aa2592ec3?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/SaraEsam"},{"nicename":"m
+        q","username":"mcqnyc","avatar":"https://gravatar.com/avatar/0549eabf300590e088cf25b85572bbfe?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/mcqnyc"},{"nicename":"magdi","username":"MagdiMoh","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182769/profile/profile-80.jpg?1","url":"http://codepen.io/MagdiMoh"},{"nicename":"Hassan
+        Ali","username":"hassanhelfi","avatar":"https://gravatar.com/avatar/dae0df6c0200723ea430c45900e6a7bc?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/hassanhelfi"},{"nicename":"Pip
+        Maxwell","username":"xpir","avatar":"https://gravatar.com/avatar/7540e5ec9ab8c517113727b618f62d00?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/xpir"},{"nicename":"ahmed
+        L","username":"ahmedL","avatar":"https://gravatar.com/avatar/f6394887d17e91bb56a4922b79e02aeb?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/ahmedL"},{"nicename":"Omar","username":"Omar_Tharwat","avatar":"https://gravatar.com/avatar/4a34ec1e0d085362b0e120940d3d9dbb?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/Omar_Tharwat"},{"nicename":"Thanwya5Stars","username":"thanwya","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1415475/profile/profile-80.jpg?1502505142","url":"http://codepen.io/thanwya"},{"nicename":"Jes&#xFA;s
+        Castro","username":"gzuzkstro","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1421954/profile/profile-80.jpg?1502761090","url":"http://codepen.io/gzuzkstro"},{"nicename":"Ahmed
+        Atia","username":"CivDev","avatar":"https://gravatar.com/avatar/8a14389e45c0344fe68cf370943a9256?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/CivDev"},{"nicename":"chandu","username":"chandu2017","avatar":"https://gravatar.com/avatar/85c321ef18ccb37c7c185a4110caba2a?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/chandu2017"},{"nicename":"Cheyne
+        Mayfield","username":"CheyneMayfield","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1442202/profile/profile-80.jpg?1503976806","url":"http://codepen.io/CheyneMayfield"},{"nicename":"Jeffrey
+        Felix","username":"JeFelix","avatar":"https://gravatar.com/avatar/477c0bfe66a30db94aa0fc61c3fa2d2a?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/JeFelix"},{"nicename":"Abdelrahman
+        Maher Abo elfetouh","username":"Aboodymaher","avatar":"https://gravatar.com/avatar/e95988b40dd1fe287a1a3efd6d44b576?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","url":"http://codepen.io/Aboodymaher"},{"nicename":"RamyAtef","username":"RamyAtef","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/1483787/profile/profile-80.jpg?1505780758","url":"http://codepen.io/RamyAtef"}]}'}
+    headers:
+      Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['7091']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 03 Oct 2017 20:04:48 GMT']
+      Etag: [W/"1bb3-2WTRnE3Qej3H+Fu99ftzUswisnE"]
+      Server: [Cowboy]
+      Via: [1.1 vegur]
+      X-Powered-By: [Express]
+    status: {code: 200, message: OK}
+version: 1
