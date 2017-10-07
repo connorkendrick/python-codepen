@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cpv2api.com/search/collections?q=CSS&page=2
+  response:
+    body: {string: '{"success":"true","data":[{"title":"Clocks and Timers","details":"<p>CSS
+        or JS Clocks - Yay!</p>","id":"moAia","url":"http://codepen.io/collection/moAia","penCount":"133
+        Pens","loves":"87","views":"47,092","user":{"nicename":"Tim Holman","username":"tholman","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/277/profile/profile-80.jpg?100000","profileUrl":"http://codepen.io/tholman"}},{"title":"Cool
+        CSS effects","details":"","id":"wlujb","url":"http://codepen.io/collection/wlujb","penCount":"7
+        Pens","loves":"","views":"232","user":{"nicename":"Sam Tsvilik","username":"stsvilik","avatar":"https://gravatar.com/avatar/076dfef244ce593194142a10c15f5924?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/stsvilik"}},{"title":"UI
+        Elements","details":"<p>A collection gathering UI elements, essentially made
+        of CSS.</p>","id":"qicJe","url":"http://codepen.io/collection/qicJe","penCount":"48
+        Pens","loves":"65","views":"7,772","user":{"nicename":"Hugo Giraudel","username":"HugoGiraudel","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/2037/profile/profile-80.jpg?100000","profileUrl":"http://codepen.io/HugoGiraudel"}},{"title":"Loaders","details":"<p>A
+        collection of CSS (and sometimes JavaScript) loaders, spinners and loadbars.</p>","id":"ruIFG","url":"http://codepen.io/collection/ruIFG","penCount":"30
+        Pens","loves":"1","views":"1,449","user":{"nicename":"Hugo Giraudel","username":"HugoGiraudel","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/2037/profile/profile-80.jpg?100000","profileUrl":"http://codepen.io/HugoGiraudel"}},{"title":"Pure
+        CSS drawings","details":"","id":"lKsHn","url":"http://codepen.io/collection/lKsHn","penCount":"2
+        Pens","loves":"","views":"474","user":{"nicename":"Daniele Moraschi","username":"danielemoraschi","avatar":"https://gravatar.com/avatar/d1454f48e9d71c13cee62358966e889c?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/danielemoraschi"}},{"title":"css
+        animation","details":"","id":"wuhGI","url":"http://codepen.io/collection/wuhGI","penCount":"3
+        Pens","loves":"","views":"192","user":{"nicename":"Arif Safiullah","username":"prantor19","avatar":"https://gravatar.com/avatar/043683bb6304aee6c9faaeac919f3667?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/prantor19"}},{"title":"CSS
+        Stuff","details":"<p>Cool CSS Features</p>","id":"xlhjt","url":"http://codepen.io/collection/xlhjt","penCount":"2
+        Pens","loves":"","views":"232","user":{"nicename":"Zach Case","username":"Krewe","avatar":"https://gravatar.com/avatar/5b6ab73102f74a11f05df2ce9ebf296d?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/Krewe"}},{"title":"Css-Animation","details":"<p>object
+        {</p><pre>\n  <code> animation: b 1.5s ease-in-out infinite;</code>\n</pre><p>}</p>","id":"toynj","url":"http://codepen.io/collection/toynj","penCount":"2
+        Pens","loves":"","views":"78","user":{"nicename":"Gans_11","username":"gans_11","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/21687/profile/profile-80.jpg?1","profileUrl":"http://codepen.io/gans_11"}},{"title":"CSS
+        STUFF","details":"","id":"Hechi","url":"http://codepen.io/collection/Hechi","penCount":"2
+        Pens","loves":"","views":"20","user":{"nicename":"michael goff","username":"michael_goff","avatar":"https://gravatar.com/avatar/c8369abbb425b852bc97f30ea09f6cf1?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/michael_goff"}},{"title":"Loaders","details":"<p>Various
+        CSS or other loaders.</p>","id":"cKtAB","url":"http://codepen.io/collection/cKtAB","penCount":"2
+        Pens","loves":"","views":"315","user":{"nicename":"Srikar G.","username":"srikarg","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/19727/profile/profile-80.jpg?20","profileUrl":"http://codepen.io/srikarg"}},{"title":"CSS
+        - Buttons","details":"","id":"DAyhf","url":"http://codepen.io/collection/DAyhf","penCount":"1
+        Pen","loves":"","views":"430","user":{"nicename":"A973C","username":"A973C","avatar":"https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/A973C"}},{"title":"CSS
+        tips","details":"","id":"pIHKJ","url":"http://codepen.io/collection/pIHKJ","penCount":"1
+        Pen","loves":"","views":"117","user":{"nicename":"rjrodriguez","username":"rjrodriguez","avatar":"https://gravatar.com/avatar/7e2378b16b492f7204a67ce597123989?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png","profileUrl":"http://codepen.io/rjrodriguez"}}]}'}
+    headers:
+      Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['5019']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 07 Oct 2017 05:22:31 GMT']
+      Etag: [W/"139b-Dp0jZ9OA2b8bkS1C/M8wOlS0rzQ"]
+      Server: [Cowboy]
+      Via: [1.1 vegur]
+      X-Powered-By: [Express]
+    status: {code: 200, message: OK}
+version: 1

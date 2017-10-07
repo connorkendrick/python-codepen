@@ -1,0 +1,96 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cpv2api.com/search/posts?q=CSS&page=2
+  response:
+    body: {string: '{"success":"true","data":[{"title":"A (Closeable) &lt;noscript&gt;
+        Warning Modal","content":"<p>Here on CodePen we display a modal window (just
+        like the one you just had to close to read this) to users with JavaScript
+        turned off. We like to make it very clear that CodePen isn&apos;t a terribly
+        wonderful site without it, but be clear about why. Here&apos;s the real one
+        we show:</p><p></p><p>Example Modal</p><p>We recently added that button to
+        actually close the modal and overlay. Normally that&apos;s JavaScript territory.
+        Bind a click handler, change a class, CSS hides things. But this modal window
+        needs to...</p>","link":"https://codepen.io/chriscoyier/post/a-closeable-noscript-warning-modal","views":"13,657","loves":"59","comments":"5","user":{"nicename":"Chris
+        Coyier","username":"chriscoyier","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/profile/profile-80.jpg?48"}},{"title":"Flexbox
+        and Intrinsic Sizing - some browser inconsistencies","content":"<p>With IE11
+        supporting the CSS Flexible Box Layout Module (Flexbox), I couldn&apos;t wait
+        to use Flexbox in production. A homepage redesign for a long-time client was
+        a great opportunity to get to...</p>","link":"https://codepen.io/leonderijke/post/flexbox-and-intrinsic-sizing-some-browser-inconsistencies","views":"10,764","loves":"11","comments":"3","user":{"nicename":"Leon
+        de Rijke","username":"leonderijke","avatar":"https://gravatar.com/avatar/453def7d74850b12416df7684058a1cf?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"Customizable
+        SVG Icons with CSS Variables","content":"<p>When you re-use SVG graphics with
+        the <code>&lt;use&gt;</code> element, it inherits CSS styles from the new
+        context. If the graphic you&apos;re re-using applies inherited styles, they
+        can be customized in each...</p>","link":"https://codepen.io/AmeliaBR/post/customizable-svg-icons-css-variables","views":"13,393","loves":"31","comments":"0","user":{"nicename":"Amelia
+        Bellamy-Royds","username":"AmeliaBR","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/91525/profile/profile-80.jpg?3"}},{"title":"A
+        tip for my designer/CSS-wielding friends wanting to learn JavaScript.","content":"<p>Hello
+        my fabulous CodePen community (and visitors, you should sign up)! I&#x2019;m
+        sorry I&#x2019;ve been a little absent around the place lately, I&#x2019;ve
+        been very busy with work and talk prep. But I am glad to be...</p>","link":"https://codepen.io/rachsmith/post/a-tip-for-my-designer-css-weilding-friends-wanting-to-learn-javascript","views":"12,837","loves":"133","comments":"24","user":{"nicename":"Rachel
+        Smith","username":"rachsmith","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/profile/profile-80.jpg?100000"}},{"title":"My
+        First SVG Banner Ad","content":"<p>You may or may not have watched a video
+        I posted a while back where I created a <a href=\"https://youtu.be/S6P_N2JWSrc\">single,
+        encapsulated SVG file</a> that not only contains SVG graphics but also GSAP&apos;s
+        TweenMax (GreenSock Animation...</p>","link":"https://codepen.io/chrisgannon/post/my-first-svg-banner-ad","views":"12,626","loves":"81","comments":"18","user":{"nicename":"Chris
+        Gannon","username":"chrisgannon","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/profile/profile-80.jpg?1507285317"}},{"title":"Don&apos;t
+        build a Bootstrap style grid-system with Flexbox.","content":"<p>Firstly I&apos;d
+        like to point out that I&apos;m not here to bash Bootstrap, in fact the opposite.
+        This post details some lessons I&apos;ve learnt from using Bootstrap, Flexbox
+        and building...</p>","link":"https://codepen.io/morganfeeney/post/dont-build-bootstrap-style-grid-systems-with-flexbox","views":"47,518","loves":"101","comments":"15","user":{"nicename":"Morgan
+        Feeney","username":"morganfeeney","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/21340/profile/profile-80.jpg?2"}},{"title":"How
+        to create a game using SVG animations (Coloron example)","content":"<p>The
+        idea of the game</p><p>I&apos;ve used SVG animations for a while and had a
+        pretty good understanding of how to use it for making animated sprites or
+        website layouts. The combination of platforms like...</p>","link":"https://codepen.io/gregh/post/create-svg-game-coloron","views":"12,958","loves":"87","comments":"6","user":{"nicename":"Greg
+        Hovanesyan","username":"gregh","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/profile/profile-80.jpg?1"}},{"title":"Learn
+        Pug.js with Pugs","content":"<p>Now Entering Pugspace</p><p></p><p>a super
+        entranced pug</p><p><em>You&apos;ve entered a world unlike your own</em>.
+        A world where pugs roam free and HTML can be written like the snip snappy
+        sharp human you are. That extremely...</p>","link":"https://codepen.io/mimoduo/post/learn-pug-js-with-pugs","views":"13,286","loves":"94","comments":"14","user":{"nicename":"Bryan
+        Stoner","username":"mimoduo","avatar":"https://gravatar.com/avatar/7a5722b43ff62576445c68fbb821331a?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"A
+        Beginner&#x2019;s Guide to Pure CSS Images","content":"<p>\n  \n</p><p><strong>Update
+        (3/14/17)</strong> We have also released a 100% free email course for learning
+        pure CSS images. You can enroll here. <a href=\"https://coding-artist.teachable.com/p/how-to-make-pure-css-images\">You
+        can sign up here.</a></p><p><strong>Update (1/6/17)</strong> I have since
+        released a 50 day email...</p>","link":"https://codepen.io/mikemang/post/a-beginner-s-guide-to-pure-css-images","views":"15,239","loves":"139","comments":"8","user":{"nicename":"Mike
+        Mangialardi","username":"mikemang","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/profile/profile-80.jpg?100000"}},{"title":"Intro
+        to Sass | SCSS101","content":"<div> <a href=\"#basics-1\">basics</a> &#x2022;
+        <a href=\"#nesting-5\">nesting</a> &#x2022; <a href=\"#variables-11\">variables</a>
+        &#x2022; <a href=\"#math-13\">math</a> &#x2022; <a href=\"#extend-14\">@extend</a>
+        &#x2022; <a href=\"#mixins-15\">mixins</a> &#x2022; <a href=\"#functions-19\">functions</a></div><p>Intro
+        to Sass | SCSS101</p><p>The following is an outline of what I cover in my
+        Sass101 workshop in San Francisco.</p><p>Basics</p><p></p><p>&quot;Sass&quot;...</p>","link":"https://codepen.io/sasstantrum/post/intro-to-sass","views":"11,899","loves":"221","comments":"3","user":{"nicename":"SassTantrum","username":"sasstantrum","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/591269/profile/profile-80.jpg?6"}},{"title":"Lesson:
+        CSS Transitions and Animations","content":"<p>https://goo.gl/API3rP</p><p>Table
+        of Contents</p><p></p><p>\n  <a href=\"#sec-introduction\">Introduction</a>\n</p><p>\n  <a
+        href=\"#sec-morphing-the-burger-menu\">Morphing the burger menu</a>\n</p><p>\n  <a
+        href=\"#sec-css-transitions\">CSS Transitions</a>\n</p><p></p><p>\n  <a href=\"#sec-transition-delay\">Transition
+        delay</a>\n</p><p>\n  <a href=\"#sec-sliding-the-sidebar\">Sliding the sidebar</a>\n</p><p>\n  <a
+        href=\"#sec-css-animations\">CSS Animations</a>\n</p><p>\n  <a href=\"#sec-javascript-events\">JavaScript
+        Events</a>\n</p><p>\n  <a></a>\n</p><p>Introduction</p><p>This tutorial will
+        show some...</p>","link":"https://codepen.io/jorgecardoso/post/css-transitions-and-animations","views":"12,534","loves":"429","comments":"7","user":{"nicename":"Jorge
+        C. S. Cardoso","username":"jorgecardoso","avatar":"https://gravatar.com/avatar/08b4bb64420a6cb409799db3081d44b1?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"Adeus
+        Flexbox, bem vindo CSS Grid Layout!","content":"<p>O Futuro Chegou!</p><p>Finalmente
+        o t&#xE3;o aguardado dia chegou, essa semana ganhamos algo mais importante
+        do que uma especifica&#xE7;&#xE3;o boa, ganhamos a implementa&#xE7;&#xE3;o
+        de uma especifica&#xE7;&#xE3;o boa nos principais...</p>","link":"https://codepen.io/simoneas02/post/grid-layout","views":"16,272","loves":"63","comments":"19","user":{"nicename":"Simone
+        Amorim","username":"simoneas02","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/944000/profile/profile-80.jpg?100000"}}]}'}
+    headers:
+      Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['8245']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 07 Oct 2017 05:13:55 GMT']
+      Etag: [W/"2035-tfGYiWlvdCe9Su42yWcX9XL4sYo"]
+      Server: [Cowboy]
+      Via: [1.1 vegur]
+      X-Powered-By: [Express]
+    status: {code: 200, message: OK}
+version: 1
