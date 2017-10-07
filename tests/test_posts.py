@@ -19,7 +19,9 @@ def post_keys():
 def test_posts_list(post_keys):
     """Tests an API call to get a list of posts"""
 
-    response = Posts.list(CATEGORY, PAGE)
+    posts_instance = Posts()
+
+    response = posts_instance.list(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"

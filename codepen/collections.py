@@ -1,8 +1,10 @@
-import requests
+from .base import CodePen
 
-class Collections(object):
-    @staticmethod
-    def collection_info(ID, page=1):
+class Collections(CodePen):
+    def __init__(self):
+        super(Collections, self).__init__()
+
+    def collection_info(self, ID, **kwargs):
         """
         Get the info (contents) of a collection.
 
@@ -15,24 +17,26 @@ class Collections(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/collection/{}'.format(ID)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        path = 'collection/{ID}'.format(ID=ID)
 
-    @staticmethod
-    def list(category='picks', page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def list(self, category=None, **kwargs):
         """
         Get a list of collections with respect to a category.
 
         Args:
             category: 'picks' | 'popular'
-                (default: 'picks')
+                (default: 'popular')
             page: The page number of the desired data.
                 (default: 1)
 
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/collections/{}'.format(category)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        category = self._get_category(category)
+        path = 'collections/{category}'.format(category=category)
+
+        response = self._GET(path, kwargs)
+        return response

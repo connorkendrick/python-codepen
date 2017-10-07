@@ -38,7 +38,7 @@ def test_user_following_list(follow_keys):
     """Tests an API call to get a list of users that the user is following"""
     
     user_instance = User(USER)
-    response = user_instance.following_list(PAGE)
+    response = user_instance.following_list(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -49,7 +49,7 @@ def test_user_follower_list(follow_keys):
     """Tests an API call to get a list of user's followers"""
 
     user_instance = User(USER)
-    response = user_instance.follower_list(PAGE)
+    response = user_instance.follower_list(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -65,7 +65,7 @@ def test_user_tags(user_tags_keys):
     """Tests an API call to get a list of tags by a user"""
 
     user_instance = User(USER)
-    response = user_instance.user_tags(PAGE)
+    response = user_instance.user_tags(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -81,7 +81,7 @@ def test_user_pens(user_pen_keys):
     """Tests an API call to get a list of pens by a user"""
 
     user_instance = User(USER)
-    response = user_instance.pens(CATEGORY, TAG, PAGE)
+    response = user_instance.pens(category=CATEGORY, tag=TAG, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -97,7 +97,7 @@ def test_user_posts(user_post_keys):
     """Tests an API call to get a list of posts by a user"""
 
     user_instance = User(USER)
-    response = user_instance.posts(CATEGORY, PAGE)
+    response = user_instance.posts(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -113,7 +113,7 @@ def test_user_collections(user_collection_keys):
     """Tests an API call to get a list of collections by a user"""
 
     user_instance = User(USER)
-    response = user_instance.collections(CATEGORY, PAGE)
+    response = user_instance.collections(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"

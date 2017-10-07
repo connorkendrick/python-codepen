@@ -20,7 +20,9 @@ def collection_info_keys():
 def test_collection_info(collection_info_keys):
     """Tests an API call to get info for a collection"""
 
-    response = Collections.collection_info(ID)
+    collections_instance = Collections()
+
+    response = collections_instance.collection_info(ID=ID)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -35,7 +37,9 @@ def collections_list_keys():
 def test_collections_list(collections_list_keys):
     """Tests an API call to get a list of collections"""
 
-    response = Collections.list(CATEGORY, PAGE)
+    collections_instance = Collections()
+
+    response = collections_instance.list(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"

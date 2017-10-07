@@ -1,13 +1,15 @@
-import requests
+from .base import CodePen
 
-class Search(object):
-    @staticmethod
-    def pens(query, limit, page=1):
+class Search(CodePen):
+    def __init__(self):
+        super(Search, self).__init__()
+
+    def pens(self, **kwargs):
         """
         Get a list of pens with respect to a keyword.
 
         Args:
-            query: The keyword searched for.
+            q: The query (keyword) searched for.
                 (required)
             limit: A username to limit the search by.
                 (optional)
@@ -17,17 +19,17 @@ class Search(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/search/pens'
-        response = requests.get(path, params = {'q': str(query), 'limit': str(limit), 'page': str(page)})
-        return response.json()['data']
+        path = 'search/pens'
 
-    @staticmethod
-    def posts(query, page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def posts(self, **kwargs):
         """
         Get a list of posts with respect to a keyword.
 
         Args:
-            query: The keyword searched for.
+            q: The query (keyword) searched for.
                 (required)
             page: The page number of the desired data.
                 (default: 1)
@@ -35,17 +37,17 @@ class Search(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/search/posts'
-        response = requests.get(path, params = {'q': str(query), 'page': str(page)})
-        return response.json()['data']
+        path = 'search/posts'
 
-    @staticmethod
-    def collections(query, page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def collections(self, **kwargs):
         """
         Get a list of collections with respect to a keyword.
 
         Args:
-            query: The keyword searched for.
+            q: The query (keyword) searched for.
                 (required)
             page: The page number of the desired data.
                 (default: 1)
@@ -53,6 +55,7 @@ class Search(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/search/collections'
-        response = requests.get(path, params = {'q': str(query), 'page': str(page)})
-        return response.json()['data']
+        path = 'search/collections'
+
+        response = self._GET(path, kwargs)
+        return response

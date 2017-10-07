@@ -1,7 +1,8 @@
-import requests
+from .base import CodePen
 
-class User(object):
+class User(CodePen):
     def __init__(self, username):
+        super(User, self).__init__()
         self.username = username
 
     def profile(self):
@@ -11,11 +12,12 @@ class User(object):
         Returns:
             A dict representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/profile/{}'.format(self.username)
-        response = requests.get(path)
-        return response.json()['data']
+        path = 'profile/{username}'.format(username=self.username)
+
+        response = self._GET(path)
+        return response
         
-    def following_list(self, page=1):
+    def following_list(self, **kwargs):
         """
         Get a list of users the user is following.
 
@@ -26,11 +28,12 @@ class User(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/following/{}'.format(self.username)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        path = 'following/{username}'.format(username=self.username)
 
-    def follower_list(self, page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def follower_list(self, **kwargs):
         """
         Get a list of users that follow the user.
 
@@ -41,11 +44,12 @@ class User(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/followers/{}'.format(self.username)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        path = 'followers/{username}'.format(username=self.username)
 
-    def user_tags(self, page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def user_tags(self, **kwargs):
         """
         Get a list of tags for the user.
 
@@ -56,17 +60,18 @@ class User(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/tags/{}'.format(self.username)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        path = 'tags/{username}'.format(username=self.username)
 
-    def pens(self, category='public', tag=None, page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def pens(self, category=None, **kwargs):
         """
         Get a list of pens by the user.
 
         Args:
             category: 'public' | 'popular' | 'loved' | 'forked' | 'showcase'
-                (default: 'public')
+                (default: 'popular')
             tag: The tag of the desired data.
                 (optional)
             page: The page number of the desired data.
@@ -75,40 +80,46 @@ class User(object):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/pens/{}/{}'.format(category, self.username)
-        response = requests.get(path, params = {'tag': str(tag), 'page': str(page)})
-        return response.json()['data']
+        category = self._get_category(category)
+        path = 'pens/{category}/{username}'.format(category=category, username=self.username)
 
-    def posts(self, category='published', page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def posts(self, category=None, **kwargs):
         """
         Get a list of posts by the user.
 
         Args:
             category: 'published' | 'popular' | 'loved'
-                (default: 'published')
+                (default: 'popular')
             page: The page number of the desired data.
                 (default: 1)
 
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/posts/{}/{}'.format(category, self.username)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        category = self._get_category(category)
+        path = 'posts/{category}/{username}'.format(category=category, username=self.username)
 
-    def collections(self, category='public', page=1):
+        response = self._GET(path, kwargs)
+        return response
+
+    def collections(self, category=None, **kwargs):
         """
         Get a list of collections by the user.
 
         Args:
             category: 'public' | 'popular' | 'loved'
-                (default: 'public')
+                (default: 'popular')
             page: The page number of the desired data.
                 (default: 1)
 
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'https://cpv2api.com/collections/{}/{}'.format(category, self.username)
-        response = requests.get(path, params = {'page': str(page)})
-        return response.json()['data']
+        category = self._get_category(category)
+        path = 'collections/{category}/{username}'.format(category=category, username=self.username)
+
+        response = self._GET(path, kwargs)
+        return response

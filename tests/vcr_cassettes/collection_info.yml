@@ -7,21 +7,21 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://cpv2api.com/collection/amheq?page=1
+    uri: https://cpv2api.com/collection/amheq
   response:
     body: {string: '{"success":"true","data":[{"title":"Google Now Inspired Flip Cards","details":"<p>Google
-        Now style info cards with CSS card flip animation. </p>","link":"https://codepen.io/ettrics/pen/zxMPWj","id":"zxMPWj","views":"26,740","loves":"399","comments":"1","images":{"small":"http://codepen.io/ettrics/pen/zxMPWj/image/small.png","large":"http://codepen.io/ettrics/pen/zxMPWj/image/large.png"},"user":{"nicename":"Ettrics","username":"ettrics","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/profile/profile-80.jpg?5"}},{"title":"Material
-        Input Field","details":"","link":"https://codepen.io/developit/pen/bEPoQR","id":"bEPoQR","views":"6,812","loves":"49","comments":"2","images":{"small":"http://codepen.io/developit/pen/bEPoQR/image/small.png","large":"http://codepen.io/developit/pen/bEPoQR/image/large.png"},"user":{"nicename":"Jason
+        Now style info cards with CSS card flip animation. </p>","link":"https://codepen.io/ettrics/pen/zxMPWj","id":"zxMPWj","views":"26,785","loves":"400","comments":"1","images":{"small":"http://codepen.io/ettrics/pen/zxMPWj/image/small.png","large":"http://codepen.io/ettrics/pen/zxMPWj/image/large.png"},"user":{"nicename":"Ettrics","username":"ettrics","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/profile/profile-80.jpg?5"}},{"title":"Material
+        Input Field","details":"","link":"https://codepen.io/developit/pen/bEPoQR","id":"bEPoQR","views":"6,813","loves":"49","comments":"2","images":{"small":"http://codepen.io/developit/pen/bEPoQR/image/small.png","large":"http://codepen.io/developit/pen/bEPoQR/image/large.png"},"user":{"nicename":"Jason
         Miller","username":"developit","avatar":"https://gravatar.com/avatar/85ed8e6da2fbf39abeb4995189be324c?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"Material
-        Design Login Form","details":"","link":"https://codepen.io/isac/pen/wMEepP","id":"wMEepP","views":"14,029","loves":"65","comments":"0","images":{"small":"http://codepen.io/isac/pen/wMEepP/image/small.png","large":"http://codepen.io/isac/pen/wMEepP/image/large.png"},"user":{"nicename":"Isac
+        Design Login Form","details":"","link":"https://codepen.io/isac/pen/wMEepP","id":"wMEepP","views":"14,038","loves":"65","comments":"0","images":{"small":"http://codepen.io/isac/pen/wMEepP/image/small.png","large":"http://codepen.io/isac/pen/wMEepP/image/large.png"},"user":{"nicename":"Isac
         Fadoni","username":"isac","avatar":"https://gravatar.com/avatar/45231493a1dc938ca5c30990c843b76b?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"Material
-        Design File Input","details":"","link":"https://codepen.io/alexandergaziev/pen/JdVQQm","id":"JdVQQm","views":"33,581","loves":"54","comments":"0","images":{"small":"http://codepen.io/alexandergaziev/pen/JdVQQm/image/small.png","large":"http://codepen.io/alexandergaziev/pen/JdVQQm/image/large.png"},"user":{"nicename":"Alexander
+        Design File Input","details":"","link":"https://codepen.io/alexandergaziev/pen/JdVQQm","id":"JdVQQm","views":"33,604","loves":"54","comments":"0","images":{"small":"http://codepen.io/alexandergaziev/pen/JdVQQm/image/small.png","large":"http://codepen.io/alexandergaziev/pen/JdVQQm/image/large.png"},"user":{"nicename":"Alexander
         Gaziev","username":"alexandergaziev","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/335606/profile/profile-80.jpg?2"}},{"title":"#webdev
         series - material lite buttons with RIPPLE effect","details":"<p>MATERIAL
         lite buttons with RIPPLE effect</p>","link":"https://codepen.io/hendrysadrak/pen/yNKZWO","id":"yNKZWO","views":"7,472","loves":"72","comments":"2","images":{"small":"http://codepen.io/hendrysadrak/pen/yNKZWO/image/small.png","large":"http://codepen.io/hendrysadrak/pen/yNKZWO/image/large.png"},"user":{"nicename":"Hendry
         Sadrak","username":"hendrysadrak","avatar":"https://gravatar.com/avatar/9a0c8146cbd2fab9ca0c53cd5b59cb90?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"}},{"title":"Material
         Design CheckBox And RadioButton","details":"<p>Material Design CheckBox And
-        RadioButton\n//Twitter: @yusufbkrr\n//Like and rt for ty :)</p>","link":"https://codepen.io/yusufbkr/pen/PqQdbK","id":"PqQdbK","views":"17,373","loves":"137","comments":"0","images":{"small":"http://codepen.io/yusufbkr/pen/PqQdbK/image/small.png","large":"http://codepen.io/yusufbkr/pen/PqQdbK/image/large.png"},"user":{"nicename":"Yusuf
+        RadioButton\n//Twitter: @yusufbkrr\n//Like and rt for ty :)</p>","link":"https://codepen.io/yusufbkr/pen/PqQdbK","id":"PqQdbK","views":"17,380","loves":"137","comments":"0","images":{"small":"http://codepen.io/yusufbkr/pen/PqQdbK/image/small.png","large":"http://codepen.io/yusufbkr/pen/PqQdbK/image/large.png"},"user":{"nicename":"Yusuf
         Bak&#x131;r","username":"yusufbkr","avatar":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/181619/profile/profile-80.jpg?3"}}]}'}
     headers:
       Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
@@ -30,8 +30,8 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['3302']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 07 Oct 2017 04:42:14 GMT']
-      Etag: [W/"ce6-8IER6oyT3Nrh8q4+EcCi2n03fiA"]
+      Date: ['Sat, 07 Oct 2017 18:27:59 GMT']
+      Etag: [W/"ce6-rS5Pf8jDvOpeuHw4z2fjUc+H9lA"]
       Server: [Cowboy]
       Via: [1.1 vegur]
       X-Powered-By: [Express]

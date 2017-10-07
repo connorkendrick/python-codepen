@@ -20,7 +20,9 @@ def pen_keys():
 def test_search_pens(pen_keys):
     """Tests an API call to get a list of pens"""
 
-    response = Search.pens(QUERY, USER, PAGE)
+    search_instance = Search()
+
+    response = search_instance.pens(q=QUERY, limit=USER, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -35,7 +37,9 @@ def post_keys():
 def test_search_posts(post_keys):
     """Tests an API call to get a list of posts"""
 
-    response = Search.posts(QUERY, PAGE)
+    search_instance = Search()
+
+    response = search_instance.posts(q=QUERY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -50,7 +54,9 @@ def collection_keys():
 def test_search_collections(collection_keys):
     """Tests an API call to get a list of collections"""
 
-    response = Search.collections(QUERY, PAGE)
+    search_instance = Search()
+
+    response = search_instance.collections(q=QUERY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"

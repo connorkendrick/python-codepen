@@ -20,7 +20,9 @@ def pen_keys():
 def test_pens_list(pen_keys):
     """Tests an API call to get a list of pens"""
 
-    response = Pens.list(CATEGORY, PAGE)
+    pens_instance = Pens()
+
+    response = pens_instance.list(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -30,7 +32,9 @@ def test_pens_list(pen_keys):
 def test_pens_tag(pen_keys):
     """Tests an API call to get a list of pens"""
 
-    response = Pens.tag(TAG, PAGE)
+    pens_instance = Pens()
+
+    response = pens_instance.tag(tag=TAG, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
