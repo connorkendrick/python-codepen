@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cpv2api.com/pens/popular/chriscoyier?tag=css&page=2
+  response:
+    body: {string: '{"success":"true","data":[{"title":"full viewport width image
+        (container) inside article","details":"<p>elements like images (or containers)
+        break out from inside a wrapper to full viewport width</p>","link":"https://codepen.io/chriscoyier/pen/xOjaYA","id":"xOjaYA","views":"4,471","loves":"143","comments":"1","images":{"small":"http://codepen.io/chriscoyier/pen/xOjaYA/image/small.png","large":"http://codepen.io/chriscoyier/pen/xOjaYA/image/large.png"},"user":{"username":"chriscoyier"}},{"title":"Day
+        and night","details":"<p>I am keep learning css animation  and linear gradients.
+        \nI know that code is shit, but anyway... my second pen.</p>","link":"https://codepen.io/chriscoyier/pen/yVyKXz","id":"yVyKXz","views":"1","loves":"","comments":"0","images":{"small":"http://codepen.io/chriscoyier/pen/yVyKXz/image/small.png","large":"http://codepen.io/chriscoyier/pen/yVyKXz/image/large.png"},"user":{"username":"chriscoyier"}},{"title":"box-decoration-break
+        demos","details":"<p>Fork of Nicks: <a href=\"https://codepen.io/callmenick/pen/yVJger\"
+        target=\"_blank\">https://codepen.io/callmenick/pen/yVJger</a></p>","link":"https://codepen.io/chriscoyier/pen/PbzXbL","id":"PbzXbL","views":"2","loves":"","comments":"0","images":{"small":"http://codepen.io/chriscoyier/pen/PbzXbL/image/small.png","large":"http://codepen.io/chriscoyier/pen/PbzXbL/image/large.png"},"user":{"username":"chriscoyier"}},{"title":"Digital
+        Static Search Box","details":"<p>this is an older pen from when i was playing
+        around with <a href=\"http://codepen.io/brandonkennedy/pen/yGjsi\">search
+        box concepts</a>.  its not perfect, but it looks freaking cool.</p>","link":"https://codepen.io/chriscoyier/pen/RoeXmN","id":"RoeXmN","views":"1,096","loves":"16","comments":"0","images":{"small":"http://codepen.io/chriscoyier/pen/RoeXmN/image/small.png","large":"http://codepen.io/chriscoyier/pen/RoeXmN/image/large.png"},"user":{"username":"chriscoyier"}},{"title":"Title
+        Scroller","details":"<p>From MailChimp: <a href=\"https://mailchimp.com/did-you-mean/\"
+        target=\"_blank\">https://mailchimp.com/did-you-mean/</a></p>","link":"https://codepen.io/chriscoyier/pen/evvjpz","id":"evvjpz","views":"8","loves":"2","comments":"0","images":{"small":"http://codepen.io/chriscoyier/pen/evvjpz/image/small.png","large":"http://codepen.io/chriscoyier/pen/evvjpz/image/large.png"},"user":{"username":"chriscoyier"}},{"title":"Lines
+        and layered css text effects","details":"<p>CSS text effects with layered
+        fonts. Using the font Core Circus for this effect.</p><p>Just playing around
+        with different css properties to create fun text effects :)</p>","link":"https://codepen.io/chriscoyier/pen/RpgMEB","id":"RpgMEB","views":"169","loves":"","comments":"0","images":{"small":"http://codepen.io/chriscoyier/pen/RpgMEB/image/small.png","large":"http://codepen.io/chriscoyier/pen/RpgMEB/image/large.png"},"user":{"username":"chriscoyier"}}]}'}
+    headers:
+      Access-Control-Allow-Headers: ['Content-Type, X-XSRF-TOKEN']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['2899']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 07 Oct 2017 03:01:49 GMT']
+      Etag: [W/"b53-4Qxqkibn+ZZsV3Bgj3CqGsS0Erk"]
+      Server: [Cowboy]
+      Via: [1.1 vegur]
+      X-Powered-By: [Express]
+    status: {code: 200, message: OK}
+version: 1
