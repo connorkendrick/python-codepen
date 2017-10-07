@@ -4,7 +4,7 @@ class Posts(object):
     @staticmethod
     def list(category='picks', page=1):
         """
-        Get a list of pens with respect to a category.
+        Get a list of posts with respect to a category.
 
         Args:
             category: 'picks' | 'popular'
