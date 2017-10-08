@@ -7,7 +7,9 @@ from codepen import User
 Constants
 """
 USER = 'chriscoyier'
-CATEGORY = 'popular'
+PENS_CATEGORY = 'public'
+POSTS_CATEGORY = 'published'
+COLLECTIONS_CATEGORY = 'loved'
 TAG = 'css'
 PAGE = 2
 
@@ -57,7 +59,7 @@ def test_user_tags(user_tags_keys):
 def test_user_pens(pen_keys):
     """Tests an API call to get a list of pens by a user"""
 
-    response = user_instance.pens(category=CATEGORY, tag=TAG, page=PAGE)
+    response = user_instance.pens(category=PENS_CATEGORY, tag=TAG, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -67,7 +69,7 @@ def test_user_pens(pen_keys):
 def test_user_posts(post_keys):
     """Tests an API call to get a list of posts by a user"""
 
-    response = user_instance.posts(category=CATEGORY, page=PAGE)
+    response = user_instance.posts(category=POSTS_CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
@@ -77,7 +79,7 @@ def test_user_posts(post_keys):
 def test_user_collections(collections_list_keys):
     """Tests an API call to get a list of collections by a user"""
 
-    response = user_instance.collections(category=CATEGORY, page=PAGE)
+    response = user_instance.collections(category=COLLECTIONS_CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"

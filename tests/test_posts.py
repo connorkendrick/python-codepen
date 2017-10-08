@@ -6,7 +6,7 @@ from codepen import Posts
 """
 Constants
 """
-CATEGORY = 'popular'
+CATEGORY = 'picks'
 PAGE = 2
 
 posts_instance = Posts()

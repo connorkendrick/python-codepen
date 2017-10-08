@@ -6,7 +6,7 @@ from codepen import Pens
 """
 Constants
 """
-CATEGORY = 'popular'
+CATEGORY = 'picks'
 TAG = 'css'
 PAGE = 2
 

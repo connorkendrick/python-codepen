@@ -7,7 +7,7 @@ from codepen import Collections
 Constants
 """
 ID = 'amheq'
-CATEGORY = 'popular'
+CATEGORY = 'picks'
 PAGE = 2
 
 collections_instance = Collections()
@@ -16,7 +16,7 @@ collections_instance = Collections()
 def test_collection_info(collection_info_keys):
     """Tests an API call to get info for a collection"""
 
-    response = collections_instance.collection_info(ID=ID)
+    response = collections_instance.collection_info(ID=ID, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
     assert isinstance(response[0], dict), "The response data should be a dict instance"
