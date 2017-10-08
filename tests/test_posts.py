@@ -9,11 +9,11 @@ Constants
 CATEGORY = 'popular'
 PAGE = 2
 
+posts_instance = Posts()
+
 @vcr.use_cassette('vcr_cassettes/posts.yml')
 def test_posts_list(post_keys):
     """Tests an API call to get a list of posts"""
-
-    posts_instance = Posts()
 
     response = posts_instance.list(category=CATEGORY, page=PAGE)
 

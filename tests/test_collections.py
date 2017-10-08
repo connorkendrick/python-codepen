@@ -10,11 +10,11 @@ ID = 'amheq'
 CATEGORY = 'popular'
 PAGE = 2
 
+collections_instance = Collections()
+
 @vcr.use_cassette('vcr_cassettes/collection_info.yml')
 def test_collection_info(collection_info_keys):
     """Tests an API call to get info for a collection"""
-
-    collections_instance = Collections()
 
     response = collections_instance.collection_info(ID=ID)
 
@@ -25,8 +25,6 @@ def test_collection_info(collection_info_keys):
 @vcr.use_cassette('vcr_cassettes/collections.yml')
 def test_collections_list(collections_list_keys):
     """Tests an API call to get a list of collections"""
-
-    collections_instance = Collections()
 
     response = collections_instance.list(category=CATEGORY, page=PAGE)
 

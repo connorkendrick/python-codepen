@@ -11,11 +11,12 @@ CATEGORY = 'popular'
 TAG = 'css'
 PAGE = 2
 
+user_instance = User(USER)
+
 @vcr.use_cassette('vcr_cassettes/user_profile.yml')
 def test_user_profile(profile_keys):
     """Tests an API call to get a user's profile data"""
 
-    user_instance = User(USER)
     response = user_instance.profile()
 
     assert isinstance(response, dict), "The response should be a dict instance"
@@ -26,7 +27,6 @@ def test_user_profile(profile_keys):
 def test_user_following_list(follow_keys):
     """Tests an API call to get a list of users that the user is following"""
     
-    user_instance = User(USER)
     response = user_instance.following_list(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
@@ -37,7 +37,6 @@ def test_user_following_list(follow_keys):
 def test_user_follower_list(follow_keys):
     """Tests an API call to get a list of user's followers"""
 
-    user_instance = User(USER)
     response = user_instance.follower_list(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
@@ -48,7 +47,6 @@ def test_user_follower_list(follow_keys):
 def test_user_tags(user_tags_keys):
     """Tests an API call to get a list of tags by a user"""
 
-    user_instance = User(USER)
     response = user_instance.user_tags(page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
@@ -59,7 +57,6 @@ def test_user_tags(user_tags_keys):
 def test_user_pens(pen_keys):
     """Tests an API call to get a list of pens by a user"""
 
-    user_instance = User(USER)
     response = user_instance.pens(category=CATEGORY, tag=TAG, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
@@ -70,7 +67,6 @@ def test_user_pens(pen_keys):
 def test_user_posts(post_keys):
     """Tests an API call to get a list of posts by a user"""
 
-    user_instance = User(USER)
     response = user_instance.posts(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
@@ -81,7 +77,6 @@ def test_user_posts(post_keys):
 def test_user_collections(collections_list_keys):
     """Tests an API call to get a list of collections by a user"""
 
-    user_instance = User(USER)
     response = user_instance.collections(category=CATEGORY, page=PAGE)
 
     assert isinstance(response, list), "The response should be a list instance"
