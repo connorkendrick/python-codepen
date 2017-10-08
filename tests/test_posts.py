@@ -1,7 +1,6 @@
 # Only call from tests/ directory
 
 import vcr
-from pytest import fixture
 from codepen import Posts
 
 """
@@ -9,11 +8,6 @@ Constants
 """
 CATEGORY = 'popular'
 PAGE = 2
-
-@fixture
-def post_keys():
-    # Responsible only for returning the test data (keys for posts)
-    return ['title', 'content', 'link', 'views', 'loves', 'comments', 'user']
 
 @vcr.use_cassette('vcr_cassettes/posts.yml')
 def test_posts_list(post_keys):

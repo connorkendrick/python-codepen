@@ -1,7 +1,6 @@
 # Only call from tests/ directory
 
 import vcr
-from pytest import fixture
 from codepen import Pens
 
 """
@@ -10,11 +9,6 @@ Constants
 CATEGORY = 'popular'
 TAG = 'css'
 PAGE = 2
-
-@fixture
-def pen_keys():
-    # Responsible only for returning the test data (keys for pens)
-    return ['title', 'details', 'link', 'id', 'views', 'loves', 'comments', 'images', 'user']
 
 @vcr.use_cassette('vcr_cassettes/pens.yml')
 def test_pens_list(pen_keys):
