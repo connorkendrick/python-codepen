@@ -1,28 +1,25 @@
-"""
-MODULE DOCSTRING: FILL IN LATER
-"""
+"""This module implements the Search functionality of python-codepen"""
 from codepen.base import _CodePen
 
 
 class Search(_CodePen):
     """
-    CLASS DOCSTRING: FILL IN LATER
+    Search functionality.
+
+    See: http://cpv2api.com/#search
     """
 
     def pens(self, **kwargs):
         """
-        Get a list of pens with respect to a keyword.
+        Get a list of pens with respect to a specified keyword.
 
         Args:
-            q: The query (keyword) searched for.
-                (required)
-            limit: A username to limit the search by.
-                (optional)
-            page: The page number of the desired data.
-                (default: 1)
+            q: The keyword to retrieve pens by. (Required)
+            limit: A username to limit the search by. (Optional)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of pens (dicts) returned from the API.
         """
         path = 'search/pens'
 
@@ -31,16 +28,14 @@ class Search(_CodePen):
 
     def posts(self, **kwargs):
         """
-        Get a list of posts with respect to a keyword.
+        Get a list of blog posts with respect to a specified keyword.
 
         Args:
-            q: The query (keyword) searched for.
-                (required)
-            page: The page number of the desired data.
-                (default: 1)
+            q: The keyword to retrieve blog posts by. (Required)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of blog posts (dicts) returned from the API.
         """
         path = 'search/posts'
 
@@ -49,16 +44,14 @@ class Search(_CodePen):
 
     def collections(self, **kwargs):
         """
-        Get a list of collections with respect to a keyword.
+        Get a list of collections with respect to a specified keyword.
 
         Args:
-            q: The query (keyword) searched for.
-                (required)
-            page: The page number of the desired data.
-                (default: 1)
+            q: The keyword to retrieve collections by. (Required)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of collections (dicts) returned from the API.
         """
         path = 'search/collections'
 

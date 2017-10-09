@@ -1,12 +1,12 @@
-"""
-MODULE DOCSTRING: FILL IN DURING DOCUMENTATION PROCESS
-"""
+"""This module implements the Collections functionality of python-codepen"""
 from codepen.base import _CodePen
 
 
 class Collections(_CodePen):
     """
-    CLASS DOCSTRING: FILL IN DURING DOCUMENTATION PROCESS
+    Collections functionality.
+
+    See: http://cpv2api.com/#collections
     """
 
     def collection_info(self, collection_id, **kwargs):
@@ -14,13 +14,11 @@ class Collections(_CodePen):
         Get the info (contents) of a collection.
 
         Args:
-            ID: The ID of the desired collection.
-                (required)
-            page: The page number of the desired data.
-                (default: 1)
+            collection_id: The id of the desired collection. (Required)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of pens (dicts) returned from the API.
         """
         path = 'collection/{collection_id}'.format(collection_id=collection_id)
 
@@ -29,16 +27,16 @@ class Collections(_CodePen):
 
     def list(self, category=None, **kwargs):
         """
-        Get a list of collections with respect to a category.
+        Get a list of collections in a specified category.
 
         Args:
-            category: 'picks' | 'popular'
-                (default: 'popular')
-            page: The page number of the desired data.
-                (default: 1)
+            category: The category of the desired data.
+                (Options: 'picks' | 'popular')
+                (Default: 'popular')
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of collections (dicts) returned from the API.
         """
         category = self._get_category(category)
         path = 'collections/{category}'.format(category=category)

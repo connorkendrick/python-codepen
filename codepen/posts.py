@@ -1,26 +1,26 @@
-"""
-MODULE DOCSTRING: FILL IN LATER
-"""
+"""This module implements the Posts functionality of python-codepen"""
 from codepen.base import _CodePen
 
 
 class Posts(_CodePen):
     """
-    CLASS DOCSTRING: FILL IN LATER
+    Posts functionality.
+
+    See: http://cpv2api.com/#posts
     """
 
     def list(self, category=None, **kwargs):
         """
-        Get a list of posts with respect to a category.
+        Get a list of blog posts in a specified category.
 
         Args:
-            category: 'picks' | 'popular'
-                (default: 'popular')
-            page: The page number of the desired data.
-                (default: 1)
+            category: The category of the desired data.
+                (Options: 'picks' | 'popular')
+                (Default: 'popular')
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of blog posts (dicts) returned from the API.
         """
         category = self._get_category(category)
         path = 'posts/{category}'.format(category=category)

@@ -1,16 +1,16 @@
-"""
-MODULE DOCSTRING: FILL IN LATER
-"""
+"""This module implements the User functionality of python-codepen"""
 from codepen.base import _CodePen
 
 
 class User(_CodePen):
     """
-    CLASS DOCSTRING: FILL IN LATER
+    User functionality.
+
+    See: http://cpv2api.com/#profiles
     """
 
     def __init__(self, username):
-        """FILL IN LATER"""
+        """Instantiate a username variable for the User object."""
         super(User, self).__init__()
         self.username = username
 
@@ -19,7 +19,7 @@ class User(_CodePen):
         Get the profile data for the user.
 
         Returns:
-            A dict representation of the JSON 'data' key returned from the API.
+            A dict containing the user profile information returned from the API.
         """
         path = 'profile/{username}'.format(username=self.username)
 
@@ -31,11 +31,10 @@ class User(_CodePen):
         Get a list of users the user is following.
 
         Args:
-            page: The page number of the desired data.
-                (default: 1)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of user profiles (dicts) returned from the API.
         """
         path = 'following/{username}'.format(username=self.username)
 
@@ -47,11 +46,10 @@ class User(_CodePen):
         Get a list of users that follow the user.
 
         Args:
-            page: The page number of the desired data.
-                (default: 1)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of user profiles (dicts) returned from the API.
         """
         path = 'followers/{username}'.format(username=self.username)
 
@@ -60,14 +58,13 @@ class User(_CodePen):
 
     def user_tags(self, **kwargs):
         """
-        Get a list of tags for the user.
+        Get a list of tags the user has used.
 
         Args:
-            page: The page number of the desired data.
-                (default: 1)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of tag data (dicts) returned from the API.
         """
         path = 'tags/{username}'.format(username=self.username)
 
@@ -79,15 +76,14 @@ class User(_CodePen):
         Get a list of pens by the user.
 
         Args:
-            category: 'public' | 'popular' | 'loved' | 'forked' | 'showcase'
-                (default: 'popular')
-            tag: The tag of the desired data.
-                (optional)
-            page: The page number of the desired data.
-                (default: 1)
+            category: The category of the desired data.
+                (Options: 'public' | 'popular' | 'loved' | 'forked' | 'showcase')
+                (Default: 'popular')
+            tag: The tag of the desired data. (Optional)
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of pens (dicts) returned from the API.
         """
         category = self._get_category(category)
         path = 'pens/{category}/{username}'.format(category=category, username=self.username)
@@ -97,16 +93,16 @@ class User(_CodePen):
 
     def posts(self, category=None, **kwargs):
         """
-        Get a list of posts by the user.
+        Get a list of blog posts by the user.
 
         Args:
-            category: 'published' | 'popular' | 'loved'
-                (default: 'popular')
-            page: The page number of the desired data.
-                (default: 1)
+            category: The category of the desired data.
+                (Options: 'published' | 'popular' | 'loved')
+                (Default: 'popular')
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of blog posts (dicts) returned from the API.
         """
         category = self._get_category(category)
         path = 'posts/{category}/{username}'.format(category=category, username=self.username)
@@ -119,13 +115,13 @@ class User(_CodePen):
         Get a list of collections by the user.
 
         Args:
-            category: 'public' | 'popular' | 'loved'
-                (default: 'popular')
-            page: The page number of the desired data.
-                (default: 1)
+            category: The category of the desired data.
+                (Options: 'public' | 'popular' | 'loved')
+                (Default: 'popular')
+            page: The page number of the desired data. (Default: 1)
 
         Returns:
-            A list representation of the JSON 'data' key returned from the API.
+            A list of collections (dicts) returned from the API.
         """
         category = self._get_category(category)
         path = 'collections/{category}/{username}'.format(category=category, username=self.username)
