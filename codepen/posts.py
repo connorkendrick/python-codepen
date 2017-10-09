@@ -21,6 +21,19 @@ class Posts(_CodePen):
 
         Returns:
             A list of blog posts (dicts) returned from the API.
+
+            Keys for post data:
+                [title]: Title of the post.
+                [content]: Content of the post.
+                [link]: Link to the post.
+                [views]: Number of views.
+                [loves]: Number of loves.
+                [comments]: Number of comments.
+                [user]: User data for the post. (dict)
+                    Keys for user:
+                        [nicename]: The user's actual name.
+                        [username]: The user's username.
+                        [avatar]: Link to the user's avatar image.
         """
         category = self._get_category(category)
         path = 'posts/{category}'.format(category=category)

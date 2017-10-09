@@ -21,6 +21,24 @@ class Pens(_CodePen):
 
         Returns:
             A list of pens (dicts) returned from the API.
+
+            Keys for pen data:
+                [title]: Title of the pen.
+                [details]: Details of the pen.
+                [link]: Link to the pen.
+                [id]: Pen's ID.
+                [views]: Number of views.
+                [loves]: Number of loves.
+                [comments]: Number of comments.
+                [images]: Image data for the pen. (dict)
+                    Keys for images:
+                        [small]: Small image of pen.
+                        [large]: Large image of pen.
+                [user]: User data for the pen. (dict)
+                    Keys for user:
+                        [nicename]: The user's actual name.
+                        [username]: The user's username.
+                        [avatar]: Link to the user's avatar image.
         """
         category = self._get_category(category)
         path = 'pens/{category}'.format(category=category)
@@ -38,6 +56,24 @@ class Pens(_CodePen):
 
         Returns:
             A list of pens (dicts) returned from the API.
+
+            Keys for pen data:
+                [title]: Title of the pen.
+                [details]: Details of the pen.
+                [link]: Link to the pen.
+                [id]: Pen's ID.
+                [views]: Number of views.
+                [loves]: Number of loves.
+                [comments]: Number of comments.
+                [images]: Image data for the pen. (dict)
+                    Keys for images:
+                        [small]: Small image of pen.
+                        [large]: Large image of pen.
+                [user]: User data for the pen. (dict)
+                    Keys for user:
+                        [nicename]: The user's actual name.
+                        [username]: The user's username.
+                        [avatar]: Link to the user's avatar image.
         """
         path = 'tag/{tag}'.format(tag=tag)
 

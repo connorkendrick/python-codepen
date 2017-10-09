@@ -19,6 +19,24 @@ class Collections(_CodePen):
 
         Returns:
             A list of pens (dicts) returned from the API.
+
+            Keys for pen data:
+                [title]: Title of the pen.
+                [details]: Details of the pen.
+                [link]: Link to the pen.
+                [id]: Pen's ID.
+                [views]: Number of views.
+                [loves]: Number of loves.
+                [comments]: Number of comments.
+                [images]: Image data for the pen. (dict)
+                    Keys for images:
+                        [small]: Small image of pen.
+                        [large]: Large image of pen.
+                [user]: User data for the pen. (dict)
+                    Keys for user:
+                        [nicename]: The user's actual name.
+                        [username]: The user's username.
+                        [avatar]: Link to the user's avatar image.
         """
         path = 'collection/{collection_id}'.format(collection_id=collection_id)
 
@@ -37,6 +55,21 @@ class Collections(_CodePen):
 
         Returns:
             A list of collections (dicts) returned from the API.
+
+            Keys for collection data:
+                [title]: Title of the collection.
+                [details]: Details of the collection.
+                [id]: Collection's ID.
+                [url]: Link to the collection.
+                [penCount]: Number of pens in collection.
+                [loves]: Number of loves.
+                [views]: Number of views.
+                [user]: User data for the collection. (dict)
+                    Keys for user:
+                        [nicename]: The user's actual name.
+                        [username]: The user's username.
+                        [avatar]: Link to the user's avatar image.
+                        [profileUrl]: Link to the user's profile.
         """
         category = self._get_category(category)
         path = 'collections/{category}'.format(category=category)
