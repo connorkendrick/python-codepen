@@ -1,3 +1,4 @@
+"""This module provides the expected keys for all requests."""
 from pytest import fixture
 
 @fixture(scope='module')
