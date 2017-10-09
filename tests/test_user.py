@@ -1,5 +1,3 @@
-# Only call from tests/ directory
-
 import vcr
 from .response_tests import response_test_list, response_test_dict
 from codepen import User
