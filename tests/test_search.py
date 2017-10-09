@@ -1,6 +1,7 @@
 # Only call from tests/ directory
 
 import vcr
+from .response_tests import response_test_list
 from codepen import Search
 
 """
@@ -18,9 +19,7 @@ def test_search_pens(pen_keys):
 
     response = search_instance.pens(q=QUERY, limit=USER, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(pen_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, pen_keys)
 
 @vcr.use_cassette('vcr_cassettes/search_posts.yml')
 def test_search_posts(post_keys):
@@ -28,9 +27,7 @@ def test_search_posts(post_keys):
 
     response = search_instance.posts(q=QUERY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(post_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, post_keys)
 
 @vcr.use_cassette('vcr_cassettes/search_collections.yml')
 def test_search_collections(collections_list_keys):
@@ -38,6 +35,4 @@ def test_search_collections(collections_list_keys):
 
     response = search_instance.collections(q=QUERY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(collections_list_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, collections_list_keys)

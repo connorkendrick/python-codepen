@@ -1,6 +1,7 @@
 # Only call from tests/ directory
 
 import vcr
+from .response_tests import response_test_list
 from codepen import Posts
 
 """
@@ -17,6 +18,4 @@ def test_posts_list(post_keys):
 
     response = posts_instance.list(category=CATEGORY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(post_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, post_keys)

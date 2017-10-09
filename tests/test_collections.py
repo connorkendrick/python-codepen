@@ -1,6 +1,7 @@
 # Only call from tests/ directory
 
 import vcr
+from .response_tests import response_test_list
 from codepen import Collections
 
 """
@@ -18,9 +19,7 @@ def test_collection_info(collection_info_keys):
 
     response = collections_instance.collection_info(ID=ID, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(collection_info_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, collection_info_keys)
 
 @vcr.use_cassette('vcr_cassettes/collections.yml')
 def test_collections_list(collections_list_keys):
@@ -28,6 +27,4 @@ def test_collections_list(collections_list_keys):
 
     response = collections_instance.list(category=CATEGORY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(collections_list_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, collections_list_keys)

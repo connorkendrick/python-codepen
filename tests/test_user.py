@@ -1,6 +1,7 @@
 # Only call from tests/ directory
 
 import vcr
+from .response_tests import response_test_list, response_test_dict
 from codepen import User
 
 """
@@ -21,8 +22,7 @@ def test_user_profile(profile_keys):
 
     response = user_instance.profile()
 
-    assert isinstance(response, dict), "The response should be a dict instance"
-    assert set(profile_keys).issubset(response.keys()), "All keys should be in the response"
+    response_test_dict(response, profile_keys)
     assert response['username'] == USER, "The username should be in the response"
 
 @vcr.use_cassette('vcr_cassettes/following_list.yml')
@@ -31,9 +31,7 @@ def test_user_following_list(follow_keys):
     
     response = user_instance.following_list(page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(follow_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, follow_keys)
 
 @vcr.use_cassette('vcr_cassettes/follower_list.yml')
 def test_user_follower_list(follow_keys):
@@ -41,9 +39,7 @@ def test_user_follower_list(follow_keys):
 
     response = user_instance.follower_list(page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(follow_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, follow_keys)
 
 @vcr.use_cassette('vcr_cassettes/user_tags.yml')
 def test_user_tags(user_tags_keys):
@@ -51,9 +47,7 @@ def test_user_tags(user_tags_keys):
 
     response = user_instance.user_tags(page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(user_tags_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, user_tags_keys)
 
 @vcr.use_cassette('vcr_cassettes/user_pens.yml')
 def test_user_pens(pen_keys):
@@ -61,9 +55,7 @@ def test_user_pens(pen_keys):
 
     response = user_instance.pens(category=PENS_CATEGORY, tag=TAG, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(pen_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, pen_keys)
 
 @vcr.use_cassette('vcr_cassettes/user_posts.yml')
 def test_user_posts(post_keys):
@@ -71,9 +63,7 @@ def test_user_posts(post_keys):
 
     response = user_instance.posts(category=POSTS_CATEGORY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(post_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, post_keys)
 
 @vcr.use_cassette('vcr_cassettes/user_collections.yml')
 def test_user_collections(collections_list_keys):
@@ -81,6 +71,4 @@ def test_user_collections(collections_list_keys):
 
     response = user_instance.collections(category=COLLECTIONS_CATEGORY, page=PAGE)
 
-    assert isinstance(response, list), "The response should be a list instance"
-    assert isinstance(response[0], dict), "The response data should be a dict instance"
-    assert set(collections_list_keys).issubset(response[0].keys()), "All keys should be in the response"
+    response_test_list(response, collections_list_keys)
