@@ -15,7 +15,7 @@ collections_instance = Collections()
 def test_collection_info(collection_info_keys):
     """Tests an API call to get info for a collection"""
 
-    response = collections_instance.collection_info(ID=ID, page=PAGE)
+    response = collections_instance.collection_info(collection_id=ID, page=PAGE)
 
     response_test_list(response, collection_info_keys)
 

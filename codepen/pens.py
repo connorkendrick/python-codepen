@@ -1,8 +1,13 @@
-from .base import CodePen
+"""
+MODULE DOCSTRING: FILL IN LATER
+"""
+from codepen.base import _CodePen
 
-class Pens(CodePen):
-    def __init__(self):
-        super(Pens, self).__init__()
+
+class Pens(_CodePen):
+    """
+    CLASS DOCSTRING: FILL IN LATER
+    """
 
     def list(self, category=None, **kwargs):
         """
@@ -20,7 +25,7 @@ class Pens(CodePen):
         category = self._get_category(category)
         path = 'pens/{category}'.format(category=category)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def tag(self, tag, **kwargs):
@@ -38,5 +43,5 @@ class Pens(CodePen):
         """
         path = 'tag/{tag}'.format(tag=tag)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response

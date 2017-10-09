@@ -1,10 +1,15 @@
-from .base import CodePen
+"""
+MODULE DOCSTRING: FILL IN DURING DOCUMENTATION PROCESS
+"""
+from codepen.base import _CodePen
 
-class Collections(CodePen):
-    def __init__(self):
-        super(Collections, self).__init__()
 
-    def collection_info(self, ID, **kwargs):
+class Collections(_CodePen):
+    """
+    CLASS DOCSTRING: FILL IN DURING DOCUMENTATION PROCESS
+    """
+
+    def collection_info(self, collection_id, **kwargs):
         """
         Get the info (contents) of a collection.
 
@@ -17,9 +22,9 @@ class Collections(CodePen):
         Returns:
             A list representation of the JSON 'data' key returned from the API.
         """
-        path = 'collection/{ID}'.format(ID=ID)
+        path = 'collection/{collection_id}'.format(collection_id=collection_id)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def list(self, category=None, **kwargs):
@@ -38,5 +43,5 @@ class Collections(CodePen):
         category = self._get_category(category)
         path = 'collections/{category}'.format(category=category)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response

@@ -1,8 +1,13 @@
-from .base import CodePen
+"""
+MODULE DOCSTRING: FILL IN LATER
+"""
+from codepen.base import _CodePen
 
-class Search(CodePen):
-    def __init__(self):
-        super(Search, self).__init__()
+
+class Search(_CodePen):
+    """
+    CLASS DOCSTRING: FILL IN LATER
+    """
 
     def pens(self, **kwargs):
         """
@@ -21,7 +26,7 @@ class Search(CodePen):
         """
         path = 'search/pens'
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def posts(self, **kwargs):
@@ -39,7 +44,7 @@ class Search(CodePen):
         """
         path = 'search/posts'
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def collections(self, **kwargs):
@@ -57,5 +62,5 @@ class Search(CodePen):
         """
         path = 'search/collections'
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response

@@ -1,8 +1,13 @@
-from .base import CodePen
+"""
+MODULE DOCSTRING: FILL IN LATER
+"""
+from codepen.base import _CodePen
 
-class Posts(CodePen):
-    def __init__(self):
-        super(Posts, self).__init__()
+
+class Posts(_CodePen):
+    """
+    CLASS DOCSTRING: FILL IN LATER
+    """
 
     def list(self, category=None, **kwargs):
         """
@@ -20,5 +25,5 @@ class Posts(CodePen):
         category = self._get_category(category)
         path = 'posts/{category}'.format(category=category)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response

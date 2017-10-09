@@ -1,7 +1,16 @@
-from .base import CodePen
+"""
+MODULE DOCSTRING: FILL IN LATER
+"""
+from codepen.base import _CodePen
 
-class User(CodePen):
+
+class User(_CodePen):
+    """
+    CLASS DOCSTRING: FILL IN LATER
+    """
+
     def __init__(self, username):
+        """FILL IN LATER"""
         super(User, self).__init__()
         self.username = username
 
@@ -14,9 +23,9 @@ class User(CodePen):
         """
         path = 'profile/{username}'.format(username=self.username)
 
-        response = self._GET(path)
+        response = self._request(path)
         return response
-        
+
     def following_list(self, **kwargs):
         """
         Get a list of users the user is following.
@@ -30,7 +39,7 @@ class User(CodePen):
         """
         path = 'following/{username}'.format(username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def follower_list(self, **kwargs):
@@ -46,7 +55,7 @@ class User(CodePen):
         """
         path = 'followers/{username}'.format(username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def user_tags(self, **kwargs):
@@ -62,7 +71,7 @@ class User(CodePen):
         """
         path = 'tags/{username}'.format(username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def pens(self, category=None, **kwargs):
@@ -83,7 +92,7 @@ class User(CodePen):
         category = self._get_category(category)
         path = 'pens/{category}/{username}'.format(category=category, username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def posts(self, category=None, **kwargs):
@@ -102,7 +111,7 @@ class User(CodePen):
         category = self._get_category(category)
         path = 'posts/{category}/{username}'.format(category=category, username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
 
     def collections(self, category=None, **kwargs):
@@ -121,5 +130,5 @@ class User(CodePen):
         category = self._get_category(category)
         path = 'collections/{category}/{username}'.format(category=category, username=self.username)
 
-        response = self._GET(path, kwargs)
+        response = self._request(path, kwargs)
         return response
