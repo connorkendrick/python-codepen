@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+github:
+  zip_url: https://github.com/connorkendrick/python-codepen/archive/1.0.0.zip
+  tar_url: https://github.com/connorkendrick/python-codepen/archive/1.0.0.tar.gz
